@@ -27,5 +27,9 @@ function spiral_matrix_advance(N)
         end
     end
     
+    if (rem(N, 2) == 1)
+        M((N+1)/2, (N+1)/2) = CNT;
+    end
+    
     disp(M)
 end
