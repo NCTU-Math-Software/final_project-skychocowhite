@@ -2,6 +2,7 @@
 final_project-skychocowhite created by GitHub Classroom
 
 ## WANTED
+* Project 3
 * Project 4
 * Project 5
 * Project 10
