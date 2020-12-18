@@ -7,3 +7,9 @@
 3. Sum all the number of each result in each iteration in step 2.
 4. Divide the result by MAX_N, then we get a averaage value.
 5. Multiple the average with the integral domain, then divided by 2, we get the length of curve.
+
+#### OTHERS
+##### Project 17
+* spiral_matrix.m
+* sipral_matrix_advance.m
+* spiral_matrix_diasum.m
