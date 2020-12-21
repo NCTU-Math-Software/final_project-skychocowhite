@@ -1,4 +1,4 @@
-function curve_length = Circle_length_Monte(r)
+function curve_length = Crofton_formula_circle(r)
     curve_length = 0;
     MAX_N = 5e6;
     for ii = 1:MAX_N
