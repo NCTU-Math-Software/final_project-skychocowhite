@@ -2,7 +2,6 @@ function curve_length = crofton_formula_circle(r)
     curve_length = 0;
     MAX_N = 5e6;
     for ii = 1:MAX_N
-        theta = rand(1)*(2*pi);
         p = rand(1)*(2*r);
         if (p < r)
             curve_length = curve_length + 2;
