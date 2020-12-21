@@ -1,4 +1,4 @@
-function Crofton_formula(T)
+function crofton_formula(T)
     MAX_N = 5e6;
     t = linspace(T(1), T(2), MAX_N);
     X = X_t(t);
