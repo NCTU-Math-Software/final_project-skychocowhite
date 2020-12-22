@@ -17,7 +17,7 @@ function crofton_formula_circle(T)
     end
 
     MAX_DRAW = 5e6;       % Number of drawing points
-    MAX_SAMPLE = 1e4;     % Number of root testing points
+    MAX_SAMPLE = 1e3;     % Number of root testing points
     MAX_ITERATION = 1e3;  % Number of iterations for random execution
     
     % Draw curve
