@@ -68,10 +68,10 @@ function cnt = inter_cnt(t, p, theta)
     for ii = 1:length(t)-1
         v1 = X_t(t(ii))*cos(theta) + Y_t(t(ii))*sin(theta) - p;
         v2 = X_t(t(ii+1))*cos(theta) + Y_t(t(ii+1))*sin(theta) - p;
-        if (v2 == 0)  % Check end point
+        if (v1*v2 < 0)  % There is a root
             cnt = cnt+1;
         end
-        if (v1*v2 < 0)  % There is an intersection
+        if (v2 == 0)  % Check end point
             cnt = cnt+1;
         end
     end
