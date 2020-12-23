@@ -97,7 +97,7 @@ end
 function x = X_t(t)
     x = zeros(1, length(t));
     for ii = 1:length(t)
-        x(ii) = 16*(sin(t(ii)))^3;
+        x(ii) = 16*(sin(t(ii)))^3;  % Change equation here
     end
 end
 
@@ -105,6 +105,6 @@ end
 function y = Y_t(t)
     y = zeros(1, length(t));
     for ii = 1:length(t)
-        y(ii) = 13*cos(t(ii)) - 5*cos(2*t(ii)) - 2*cos(3*t(ii)) - cos(4*t(ii));
+        y(ii) = 13*cos(t(ii)) - 5*cos(2*t(ii)) - 2*cos(3*t(ii)) - cos(4*t(ii));  % Change equation here
     end
 end
