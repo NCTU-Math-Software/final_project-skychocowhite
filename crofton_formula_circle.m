@@ -52,7 +52,7 @@ function crofton_formula_circle(T)
     disp('Approximate length:')  % Approximate
     disp(curve_length)
     disp('Actual length:')       % Accurate
-    disp(4*pi*123)
+    disp(2*pi*123)
 end
 
 %% Function for counting intersections
