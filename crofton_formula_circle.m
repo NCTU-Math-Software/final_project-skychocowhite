@@ -47,7 +47,7 @@ function crofton_formula_circle(T)
     end
     toc  % Count time
     
-    % Show approximate and accrate curve lengths
+    % Show approximate and accurate curve lengths
     curve_length = curve_length / MAX_ITERATION * (2*pi*R) / 2;
     disp('Approximate length:')  % Approximate
     disp(curve_length)
@@ -68,10 +68,10 @@ function cnt = inter_cnt(t, p, theta)
     for ii = 1:length(t)-1
         v1 = X_t(t(ii))*cos(theta) + Y_t(t(ii))*sin(theta) - p;
         v2 = X_t(t(ii+1))*cos(theta) + Y_t(t(ii+1))*sin(theta) - p;
-        if (v2 == 0)  % Check end point
+        if (v1*v2 < 0)  % There is a root
             cnt = cnt+1;
         end
-        if (v1*v2 < 0)  % There is an intersection
+        if (v2 == 0)  % Check end point
             cnt = cnt+1;
         end
     end
@@ -97,7 +97,7 @@ end
 function x = X_t(t)
     x = zeros(1, length(t));
     for ii = 1:length(t)
-        x(ii) = 123*cos(t(ii));
+        x(ii) = 123*cos(t(ii));  % Change equation here
     end
 end
 
@@ -105,6 +105,6 @@ end
 function y = Y_t(t)
     y = zeros(1, length(t));
     for ii = 1:length(t)
-        y(ii) = 123*sin(t(ii));
+        y(ii) = 123*sin(t(ii));  % Change equation here
     end
 end
