@@ -6,7 +6,7 @@ function crofton_formula(T)
     % Example:
     % > (Change the parametric equation in the function to x and y coordinates)
     % > (If you can, calculate curve length at first to check error.)
-    % > T = [0,1];
+    % > T = [0,2*pi];
     % > crofton_formula(T);
     
     % Check domain interval error
