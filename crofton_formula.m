@@ -49,6 +49,7 @@ function crofton_formula(T)
     
     % Show approximate and accurate curve lengths
     curve_length = curve_length / MAX_ITERATION * (2*pi*R) / 2;
+    format long
     disp('Approximate length:')  % Approximate
     disp(curve_length)
     disp('Actual length:')       % Accurate
